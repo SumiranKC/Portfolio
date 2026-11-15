@@ -24,15 +24,23 @@ const skills = [
 ]
 
 const experience = [
-  { period: '2024 — Present', role: 'Your Current Role', company: 'Company Name · Melbourne, AU', detail: 'Add a concise overview of your responsibilities, the teams you collaborate with, and the value your work creates.' },
-  { period: '2022 — 2024', role: 'Previous Role', company: 'Company Name · Location', detail: 'Describe a meaningful achievement, the products or campaigns you shaped, and the tools you used to deliver them.' },
-  { period: '2020 — 2022', role: 'Earlier Role / Internship', company: 'Company Name · Location', detail: 'Show how this experience contributed to your craft, confidence, and multidisciplinary way of working.' },
+  { period: '2021 — 2022', role: 'Software Development Intern', company: 'Bright Labs · Melbourne, AU', detail: 'Supported the product team by building reusable interface components, resolving front-end issues, and contributing to quality assurance across responsive web projects.' },
+  { period: '2022 — 2024', role: 'Web Developer', company: 'Pixel & Code Studio · Melbourne, AU', detail: 'Developed accessible React websites, translated design systems into production interfaces, and collaborated with designers and clients from discovery through launch.' },
+  { period: '2024 — Present', role: 'AI / ML Developer', company: 'Future Systems · Melbourne, AU', detail: 'Currently designing intelligent product experiences, prototyping machine-learning workflows, and connecting AI capabilities with clear, human-centred interfaces.' },
 ]
 
 const education = [
-  { period: '2020 — 2024', title: 'Degree or Qualification', place: 'University or Institution Name', detail: 'Major / specialisation · Awards, societies, or a relevant capstone project.' },
-  { period: '2024', title: 'Professional Certification', place: 'Learning Provider', detail: 'Add a focused course, certification, or bootcamp that strengthens your professional story.' },
+  { period: '2018 — 2021', title: 'Bachelor of Information Technology', place: 'Melbourne Institute of Technology', detail: 'Studied software development, web technologies, databases, networking, and human-computer interaction, with a final-year web application project.' },
+  { period: '2022 — 2024', title: 'Master of Artificial Intelligence', place: 'Australian Technology University', detail: 'Focused on machine learning, deep learning, natural-language processing, computer vision, and the responsible design of AI-powered systems.' },
 ]
+
+function GitHubIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18A11 11 0 0 1 12 6.13c.98 0 1.95.13 2.87.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05a4.45 4.45 0 0 1 1.19 3.09c0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.07.79 2.16v3.24c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+    </svg>
+  )
+}
 
 function App() {
   const [activeCategory, setActiveCategory] = useState('All')
@@ -66,6 +74,7 @@ function App() {
           <a href="#work" onClick={closeMenu}>Work</a>
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#experience" onClick={closeMenu}>Experience</a>
+          <a href="#education" onClick={closeMenu}>Education</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
           <a className="nav-cta" href="#contact" onClick={closeMenu}>Let’s talk <ArrowUpRight size={16} /></a>
         </nav>
@@ -135,26 +144,31 @@ function App() {
           </div>
         </section>
 
-        <section className="journey-section section-pad" id="experience">
+        <section className="journey-section experience-section section-pad" id="experience">
           <div className="section-heading journey-heading">
-            <div><p className="eyebrow">03 / The journey</p><h2>Experience &<br />education.</h2></div>
-            <p className="section-intro">A place for the roles, lessons, and turning points that shaped how you work today.</p>
+            <div><p className="eyebrow">03 / Experience</p><h2>Where I’ve<br />made an impact.</h2></div>
+            <p className="section-intro">Three chapters tracing the journey from a first internship to web development and an AI-focused current role.</p>
           </div>
-          <div className="history-columns">
-            <div className="history-column">
-              <div className="history-label"><span>Work history</span><span>{experience.length} roles</span></div>
-              {experience.map((item) => <article className="history-item" key={`${item.period}-${item.role}`}><span className="history-period">{item.period}</span><div><h3>{item.role}</h3><h4>{item.company}</h4><p>{item.detail}</p></div></article>)}
-            </div>
-            <div className="history-column education-column">
-              <div className="history-label"><span>Education</span><span>{education.length} chapters</span></div>
-              {education.map((item) => <article className="history-item" key={`${item.period}-${item.title}`}><span className="history-period">{item.period}</span><div><h3>{item.title}</h3><h4>{item.place}</h4><p>{item.detail}</p></div></article>)}
-            </div>
+          <div className="history-column history-wide">
+            <div className="history-label"><span>Work history</span><span>{experience.length} roles</span></div>
+            {experience.map((item) => <article className="history-item" key={`${item.period}-${item.role}`}><span className="history-period">{item.period}</span><div><h3>{item.role}</h3><h4>{item.company}</h4><p>{item.detail}</p></div></article>)}
+          </div>
+        </section>
+
+        <section className="education-section section-pad" id="education">
+          <div className="section-heading journey-heading">
+            <div><p className="eyebrow">04 / Education</p><h2>Built on strong<br />foundations.</h2></div>
+            <p className="section-intro">Formal study spanning the practical foundations of information technology and advanced artificial intelligence.</p>
+          </div>
+          <div className="history-column history-wide">
+            <div className="history-label"><span>Education history</span><span>{education.length} qualifications</span></div>
+            {education.map((item) => <article className="history-item" key={`${item.period}-${item.title}`}><span className="history-period">{item.period}</span><div><h3>{item.title}</h3><h4>{item.place}</h4><p>{item.detail}</p></div></article>)}
           </div>
         </section>
 
         <section className="contact-section section-pad" id="contact">
           <div className="contact-copy">
-            <p className="eyebrow">04 / Get in touch</p><h2>Have an idea?<br /><em>Let’s make it real.</em></h2>
+            <p className="eyebrow">05 / Get in touch</p><h2>Have an idea?<br /><em>Let’s make it real.</em></h2>
             <p>Tell me what you’re building, what you need, or simply say hello. I’d love to hear from you.</p>
             <a href="mailto:hello@yourname.com">hello@yourname.com <ArrowUpRight size={18} /></a>
           </div>
@@ -171,7 +185,7 @@ function App() {
       <footer>
         <a className="brand footer-brand" href="#top"><span>S</span> / PORTFOLIO</a>
         <p>© {new Date().getFullYear()} · Designed & built with care.</p>
-        <div className="socials"><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><span>GH</span></a><a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span>in</span></a><a href="mailto:hello@yourname.com" aria-label="Email"><Mail /></a></div>
+        <div className="socials"><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon /></a><a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span>in</span></a><a href="mailto:hello@yourname.com" aria-label="Email"><Mail /></a></div>
       </footer>
 
       {selectedProject && (
