@@ -1,0 +1,238 @@
+{
+  "site": {
+    "title": "Sumiran — Creative Developer & Designer",
+    "description": "A multidisciplinary portfolio spanning web development, graphic design, AI/ML, and creative technology.",
+    "themeColor": "#171710"
+  },
+
+  "profile": {
+    "name": "Sumiran",
+    "initial": "S",
+    "brandLabel": "/ PORTFOLIO",
+    "email": "hello@yourname.com"
+  },
+
+  "navigation": {
+    "links": [
+      { "label": "Work", "href": "#work" },
+      { "label": "About", "href": "#about" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": { "label": "Let’s talk", "href": "#contact" }
+  },
+
+  "hero": {
+    "kicker": "Multidisciplinary maker · Melbourne",
+    "heading": [
+      ["I build ", { "text": "digital", "style": "highlight" }],
+      ["things with ", { "text": "feeling.", "style": "emphasis" }]
+    ],
+    "intro": "Web developer, graphic designer, and AI explorer creating useful experiences at the intersection of code, design, and curiosity.",
+    "orbitWords": ["WEB", "DESIGN", "AI / ML", "IDEAS"]
+  },
+
+  "ticker": [
+    "AVAILABLE FOR GOOD IDEAS",
+    "WEB DEVELOPMENT",
+    "GRAPHIC DESIGN",
+    "AI / ML",
+    "CREATIVE TECHNOLOGY"
+  ],
+
+  "projects": {
+    "eyebrow": "01 / Selected work",
+    "heading": ["Different tools.", "One point of view."],
+    "intro": "A cross-section of web, visual, intelligent, and experimental work. These sample cards are ready to be replaced with your real projects.",
+    "allCategoryLabel": "All",
+    "categories": ["Web Development", "Graphic Design", "ML / AI", "Other"],
+    "modal": {
+      "noteTitle": "Your case study goes here.",
+      "noteText": "Add the challenge, your process, final outcome, project images, and live links when you replace this sample project.",
+      "contactLabel": "Discuss a similar project"
+    },
+    "items": [
+      {
+        "id": "01",
+        "title": "Commerce, Reimagined",
+        "category": "Web Development",
+        "type": "Concept / Case study",
+        "summary": "A fast, accessible storefront concept with thoughtful product discovery and a frictionless checkout flow.",
+        "tags": ["React", "Node.js", "UX"],
+        "accent": "coral",
+        "icon": "Code2"
+      },
+      {
+        "id": "02",
+        "title": "Northbound Identity",
+        "category": "Graphic Design",
+        "type": "Concept / Case study",
+        "summary": "A flexible brand system built around bold typography, modular layouts, and a confident visual voice.",
+        "tags": ["Branding", "Print", "Figma"],
+        "accent": "blue",
+        "icon": "Brush"
+      },
+      {
+        "id": "03",
+        "title": "Vision QC",
+        "category": "ML / AI",
+        "type": "Concept / Case study",
+        "summary": "A computer-vision concept that identifies manufacturing defects and surfaces clear quality insights.",
+        "tags": ["Python", "PyTorch", "CV"],
+        "accent": "lime",
+        "icon": "BrainCircuit"
+      },
+      {
+        "id": "04",
+        "title": "Money, Clearly",
+        "category": "Other",
+        "type": "Concept / Case study",
+        "summary": "A personal-finance product concept that turns complex spending data into calm, actionable guidance.",
+        "tags": ["Product", "Research", "Strategy"],
+        "accent": "yellow",
+        "icon": "Sparkles"
+      },
+      {
+        "id": "05",
+        "title": "Afterdark Festival",
+        "category": "Web Development",
+        "type": "Concept / Case study",
+        "summary": "An immersive event site with kinetic type, responsive schedules, and a playful ticket journey.",
+        "tags": ["React", "Motion", "CMS"],
+        "accent": "purple",
+        "icon": "Code2"
+      },
+      {
+        "id": "06",
+        "title": "Signal / Noise",
+        "category": "Graphic Design",
+        "type": "Concept / Case study",
+        "summary": "An editorial campaign exploring information overload through layered type and expressive composition.",
+        "tags": ["Editorial", "Art Direction", "Adobe"],
+        "accent": "pink",
+        "icon": "Brush"
+      },
+      {
+        "id": "07",
+        "title": "Ask Atlas",
+        "category": "ML / AI",
+        "type": "Concept / Case study",
+        "summary": "A retrieval-augmented assistant concept designed to make complex internal knowledge easy to explore.",
+        "tags": ["LLM", "RAG", "FastAPI"],
+        "accent": "cyan",
+        "icon": "BrainCircuit"
+      },
+      {
+        "id": "08",
+        "title": "Open Components",
+        "category": "Other",
+        "type": "Concept / Case study",
+        "summary": "A growing collection of inclusive interface patterns, documented for designers and developers alike.",
+        "tags": ["Open Source", "A11y", "Systems"],
+        "accent": "orange",
+        "icon": "Layers3"
+      }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "02 / About me",
+    "heading": ["Part developer.", "Part designer.", [{ "text": "Fully curious.", "style": "emphasis" }]],
+    "paragraphs": [
+      "I care about the full shape of an idea: how it works, how it looks, and how it makes someone feel. My practice moves between interfaces, visual identities, and intelligent products.",
+      "Whether I’m refining a design system or prototyping with machine learning, I bring the same mix of clarity, craft, and experimentation to the work."
+    ],
+    "stamp": "THINK · MAKE · REFINE ·",
+    "resume": {
+      "label": "Request résumé",
+      "emailSubject": "Résumé request"
+    }
+  },
+
+  "skills": {
+    "eyebrow": "What I bring",
+    "items": [
+      { "title": "Build", "description": "React, JavaScript, Node.js, APIs, responsive systems", "icon": "Code2" },
+      { "title": "Design", "description": "Brand identity, UI/UX, art direction, motion, prototyping", "icon": "Brush" },
+      { "title": "Intelligence", "description": "Python, ML workflows, LLM applications, data storytelling", "icon": "BrainCircuit" }
+    ]
+  },
+
+  "experience": {
+    "eyebrow": "03 / Experience",
+    "heading": ["Where I’ve", "made an impact."],
+    "intro": "Three chapters tracing the journey from a first internship to web development and an AI-focused current role.",
+    "listLabel": "Work history",
+    "countLabel": "roles",
+    "items": [
+      {
+        "role": "Software Development Intern",
+        "company": "Bright Labs",
+        "location": "Melbourne, AU",
+        "period": "2021 — 2022",
+        "description": "Supported the product team by building reusable interface components, resolving front-end issues, and contributing to quality assurance across responsive web projects."
+      },
+      {
+        "role": "Web Developer",
+        "company": "Pixel & Code Studio",
+        "location": "Melbourne, AU",
+        "period": "2022 — 2024",
+        "description": "Developed accessible React websites, translated design systems into production interfaces, and collaborated with designers and clients from discovery through launch."
+      },
+      {
+        "role": "AI / ML Developer",
+        "company": "Future Systems",
+        "location": "Melbourne, AU",
+        "period": "2024 — Present",
+        "description": "Currently designing intelligent product experiences, prototyping machine-learning workflows, and connecting AI capabilities with clear, human-centred interfaces."
+      }
+    ]
+  },
+
+  "education": {
+    "eyebrow": "04 / Education",
+    "heading": ["Built on strong", "foundations."],
+    "intro": "Formal study spanning the practical foundations of information technology and advanced artificial intelligence.",
+    "listLabel": "Education history",
+    "countLabel": "qualifications",
+    "items": [
+      {
+        "degree": "Bachelor of Information Technology",
+        "college": "Melbourne Institute of Technology",
+        "period": "2018 — 2021",
+        "description": "Studied software development, web technologies, databases, networking, and human-computer interaction, with a final-year web application project."
+      },
+      {
+        "degree": "Master of Artificial Intelligence",
+        "college": "Australian Technology University",
+        "period": "2022 — 2024",
+        "description": "Focused on machine learning, deep learning, natural-language processing, computer vision, and the responsible design of AI-powered systems."
+      }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "05 / Get in touch",
+    "heading": ["Have an idea?", [{ "text": "Let’s make it real.", "style": "emphasis" }]],
+    "intro": "Tell me what you’re building, what you need, or simply say hello. I’d love to hear from you.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "messageLabel": "What can we make together?",
+      "messagePlaceholder": "A little about your project...",
+      "submitLabel": "Send message",
+      "successMessage": "Thanks! Connect this form to Formspree or your API to receive submissions."
+    }
+  },
+
+  "footer": {
+    "tagline": "Designed & built with care.",
+    "socials": [
+      { "platform": "github", "label": "GitHub", "url": "https://github.com/" },
+      { "platform": "linkedin", "label": "LinkedIn", "url": "https://linkedin.com/" }
+    ]
+  }
+}
